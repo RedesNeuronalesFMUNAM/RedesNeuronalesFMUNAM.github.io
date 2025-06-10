@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio de Redes Neuronales</title>
+</head>
+
+<style>
+
+#left-bar{
+          width:25%;
+          background-color: #73b7ce;
+          display: inline-table;
+          font-family: 'Courier', monospace;
+ }
+ #middle-bar{
+          width:40%;
+          background-color: #3c6fc688;
+          display: inline-table;
+          font-family: 'Courier', monospace;
+ }
+ #right-bar{
+          width:25%;
+          background-color: #73b7ce;
+          display:inline-table;
+          font-family: 'Courier', monospace;
+       
+ }
+
+.row > div {float:left;}
+
+
+#cuerpo{
+    background-color: rgb(176, 248, 255);
+    font-family: 'Courier', monospace;
+}
+
+</style>
+
+
+<body id="cuerpo" style="text-align:center;">
+    
+<h1>
+    <p>Laboratorio de Redes Neuronales</p>
+    <h2>Facultad de Medicina</h2>
+</h1>
+
+<div id="left-bar"> 
+
+    <h3>Anuncios</h3>
+    <p>
+        
+
+    </p>
+
+
+
+
+</div>
+
+
+
+<div id="middle-bar" style="text-align: center;">
+    <h3>Acerca del laboratorio</h3>
+    <p style="text-align: justify;">Somos el Laboratorio de Redes Neuronales de la FacMed, UNAM
+
+    Nos caracterizamos por ser un grupo 
+    multidisciplinario de investigación y estamos interesados en descubrir las incógnitas
+    que subyacen al sueño, la memoria y el aprendizaje a través de un invertebrado, el acocil
+    </p>
+    <p>
+        <img src="acocil2.jpeg" style="width:400px;height:500px;" alt="Acocil ">
+    </p>
+</div>
+
+<div id="right-bar">
+    <h3>Responsables del laboratorio</h3>
+    <p>Dr. Jesús Hernández Falcón <br>
+        Correo: <email>jesushf@unam.mx</email>
+    </p>
+
+    <p>Dra. Karina Mendoza Ángeles<br>
+        Correo: <email>xolotlk@gmail.com</email>
+    </p>
+</div>
+
+<script>
+
+
+let i=0;
+var numero="30";
+let guia=4;
+let veo;
+while(i<10){
+    
+    veo=numero+guia+i;
+    console.log(String.fromCharCode(parseInt(veo, 16)));
+    document.getElementById("Mov1").innerText=String.fromCharCode(parseInt(veo, 16));
+    i=i+1;
+}
+</script>
+
+</body>
+</html>
